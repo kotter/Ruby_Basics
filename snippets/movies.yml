@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+star_wars:
+  title: Star Wars
+  description: MyText
+  placement: in_theaters
+  mpaa_rating: PG
+  runtime: 50
+  poster_image: star_wars.jpg
+  has_subtitles: false
+  ticket_price: 9.99
+  release_date: 2013-07-15
+  director: MyString
+  producer: MyString
+  studio: MyString
+
+godfather:
+  title: The Godfather
+  description: MyText
+  placement: go_now
+  mpaa_rating: R
+  runtime: 120
+  poster_image: godfather.jpg
+  has_subtitles: false
+  ticket_price: 9.99
+  release_date: 2013-07-15
+  director: MyString
+  producer: MyString
+  studio: MyString

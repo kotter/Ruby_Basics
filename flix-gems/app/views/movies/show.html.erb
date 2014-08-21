@@ -1,0 +1,51 @@
+<div id="movie-info" class="clearfix">
+<%= image_tag "posters/large/#{@movie.poster_image}", class: "imgLeft poster-image" %>
+
+	<div class="overview">
+
+		<h2><%= @movie.title %></h2>
+		<p>Cast: <%= @movie.cast %></p>
+		<p class="mpaa-rating">Rating: <%= @movie.mpaa_rating %></p>
+		<p class="runtime">Runtime: <%= @movie.runtime_hours %></p>
+		<%= simple_format @movie.description %>
+		<%= link_to "Edit This Movie", edit_movie_path(@movie), class: "button" %>
+	</div>
+	
+	<div class="details">
+		<h4>Movie Details</h4>
+		<div>
+			<span>Genre:</span>
+			<%= link_to(@movie.genre.name, @movie.genre) unless @movie.genre.nil? %>
+		</div>
+		<div>
+			<span>Director:</span>
+			<%= @movie.director %>
+		</div>
+		<div>
+			<span>Producer:</span>
+			<%= @movie.producer %>
+		</div>
+		<div>
+			<span>Studio:</span>
+			<%= @movie.studio %>
+		</div>
+		<div>
+			<span>Subtitles:</span>
+			<% if @movie.has_subtitles? %>
+				Yes
+			<% else %>
+				No
+			<% end %>
+		</div>
+		<div>
+			<span>Ticket Price:</span>
+			<%= number_to_currency @movie.ticket_price %>
+		</div>
+		<div>
+			<span>Release Date:</span>
+			<%= @movie.release_date.strftime('%-m/%-d/%Y') %>
+		</div> 
+	</div>
+
+	
+</div>

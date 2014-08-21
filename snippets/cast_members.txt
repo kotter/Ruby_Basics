@@ -1,0 +1,3 @@
+Movie.find(3).cast_members.create([{name: "Tim Parks"}, {name: "Giovanni di Paolo"}, {name: "Lisa Knowles"}])
+Movie.find(4).cast_members.create([{name: "Susannah Lakes"}, {name: "Jordan Smith"}, {name: "Bianca Alba"}])
+Movie.find(5).cast_members.create([{name: "Leonora Greene"}, {name: "James Redd"}, {name: "Giamberto Vanni"}])

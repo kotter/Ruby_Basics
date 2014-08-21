@@ -1,0 +1,35 @@
+Title
+Will Code For Brains
+
+Description
+Forget Bawls and Mountain Dew!  These undead uber-geeks need only one thing to fuel their unholy hackathons—your brains!
+
+Placement
+go_now
+
+MPAA Rating
+R
+
+Poster Image
+willcodeforbrains-2x.jpg
+
+Runtime
+82
+
+Has Subtitles
+false
+
+Ticket Price
+10.25
+
+release date
+2013-11-02
+
+director
+Rome Giorgio
+
+producer
+Gordon Stuart
+
+studio
+Pizza Empire Films

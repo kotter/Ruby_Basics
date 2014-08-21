@@ -1,0 +1,18 @@
+<h1>What Movie Do You Want to See?</h1>
+          <h3>Find your perfect movie fast with Flix. Get movie showtimes, reviews and more.</h3>
+        </div>
+        <div class="tabgroup">
+          <nav class="tabs clearfix">
+            <ul>
+              <li<%= ' class=active' if @placement.nil? %>><%= link_to "All Movies", movies_path %><li>
+              <li<%= ' class=active' if @placement == "in_theaters" %>><%= link_to "In Theaters", "/movies/recommended/in_theaters" %><li>
+              <li<%= ' class=active' if @placement == "coming_soon" %>><%= link_to "Coming Soon", "/movies/recommended/coming_soon" %><li>
+              <li<%= ' class=active' if @placement == "go_now" %>><%= link_to "Go Now", "/movies/recommended/go_now" %><li>
+            </ul>
+          </nav>
+          <div class="clearfix">
+            <%= render 'movie_list', movies: @movies %>
+            <div class="inset-block">
+              <a class="more-movies" href="#">View More Movies</a>
+            </div>
+          </div>

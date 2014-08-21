@@ -1,0 +1,5 @@
+<% 100.times do |i| %>
+cast_member_<%= i %>:
+  name: Ms. <%= i %>
+  movie: star_wars
+<% end %>

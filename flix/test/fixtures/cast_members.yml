@@ -1,0 +1,6 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+<% 100.times do |i| %>
+cast_member_<%= i %>:
+  name: Ms. <%= i %>
+  movie: star_wars
+<% end %>

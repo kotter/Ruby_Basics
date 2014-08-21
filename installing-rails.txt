@@ -1,0 +1,42 @@
+INSTALL XCODE
+INSTALL COMMAND LINE TOOLS
+
+INSTALL HOMEBREW (PACKAGE MANAGEMENT FOR MAC OS X)
+$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+
+CHECK THAT HOMEBREW IS WORKING!
+$ brew doctor
+
+IF YOU SEE "Error: No such file or directory - /usr/local/Cellar" RUN
+$ sudo mkdir /usr/local/Cellar
+$ sudo chown -R `whoami` /usr/local
+
+INSTALL RUBY VERSION MANAGER (RVM)
+$ curl -L get.rvm.io | bash
+
+SOURCE RVM EVERY TIME
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+Close the Terminal window and create a new Terminal window (Shell > New Window > Basic).
+
+INSTALL RUBY
+$ rvm requirements
+
+Install any packages listed. 
+
+Close the Terminal window and create a new Terminal window (Shell > New Window > Basic).
+
+$ brew doctor
+
+IF YOU SEE "Warning: /usr/bin occurs before /usr/local/bin" RUN
+$ echo 'export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH' >> .bash_profile
+
+$ rvm install 2.1.1
+
+$ ruby -v
+
+INSTALL RAILS
+$ gem install rails
+
+CHECK THAT WE HAVE THE LATEST VERSION
+$ rails -v
